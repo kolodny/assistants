@@ -1,5 +1,5 @@
 {
-  "name": "assistants",
+  "name": "@kolodny/clippy",
   "version": "1.0.0",
   "description": "Same old Clippy. Modern JavaScript.",
   "main": "dist/index.js",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kolodny/assistants.git"
+    "url": "git+https://github.com/kolodny/clippy.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kolodny/assistants/issues"
+    "url": "https://github.com/kolodny/clippy/issues"
   },
-  "homepage": "https://github.com/kolodny/assistants#readme",
+  "homepage": "https://github.com/kolodny/clippy#readme",
   "devDependencies": {
     "@lopatnov/rollup-plugin-uglify": "^2.1.5",
     "@open-wc/building-rollup": "^2.2.1",

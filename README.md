@@ -15,11 +15,11 @@ Run `npm run demo` to view the agent demo page.
 ### NPM / Webpack
 
 ```
-npm install assistants
+npm install @kolodny/clippy
 ```
 
 ```ts
-import clippy from 'assistants';
+import clippy from '@kolodny/clippy';
 
 clippy.load('Merlin', (agent: Agent) => {
   // do anything with the loaded agent
@@ -63,8 +63,6 @@ agent.stop();
 # Licence
 
 MIT
-
-[FOSSA Status](https://app.fossa.com/projects/git%2Bgithub.com%2Flizozom%2Fassistants?utm_source=share_link)
 
 ## Special Thanks
 
