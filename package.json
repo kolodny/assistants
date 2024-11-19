@@ -1,6 +1,6 @@
 {
-  "name": "clippyts",
-  "version": "1.0.5",
+  "name": "assistants",
+  "version": "1.0.0",
   "description": "Same old Clippy. Modern JavaScript.",
   "main": "dist/index.js",
   "web": "dist/index.js",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lizozom/clippyts.git"
+    "url": "git+https://github.com/kolodny/assistants.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lizozom/clippyts/issues"
+    "url": "https://github.com/kolodny/assistants/issues"
   },
-  "homepage": "https://github.com/lizozom/clippyts#readme",
+  "homepage": "https://github.com/kolodny/assistants#readme",
   "devDependencies": {
     "@lopatnov/rollup-plugin-uglify": "^2.1.5",
     "@open-wc/building-rollup": "^2.2.1",

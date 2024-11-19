@@ -1,8 +1,10 @@
-import { AgentType } from '../types';
+import { AgentWrapper } from '../types';
 
-function loadAgent (name: AgentType) {
+type Imported = Promise<{ default: AgentWrapper }>;
+
+function loadAgent(wrapper: Imported) {
     return new Promise<any>((resolve, reject) => {
-        import(`./agents/${name}.js`).then(module => {
+        wrapper.then((module) => {
             resolve(module.default);
         }).catch(err => {
             reject(err);
@@ -11,14 +13,14 @@ function loadAgent (name: AgentType) {
 }
 
 export const agents: Record<string, any> = {
-    Bonzi: () => loadAgent('Bonzi'),
-    Clippy: () => loadAgent('Clippy'),
-    F1: () => loadAgent('F1'),
-    Genie: () => loadAgent('Genie'),
-    Genius: () => loadAgent('Genius'),
-    Links: () => loadAgent('Links'),
-    Merlin: () => loadAgent('Merlin'),
-    Peedy: () => loadAgent('Peedy'),
-    Rocky: () => loadAgent('Rocky'),
-    Rover: () => loadAgent('Rover'),
+  Bonzi: () => loadAgent(import('./Bonzi')),
+  Clippy: () => loadAgent(import('./Clippy')),
+  F1: () => loadAgent(import('./F1')),
+  Genie: () => loadAgent(import('./Genie')),
+  Genius: () => loadAgent(import('./Genius')),
+  Links: () => loadAgent(import('./Links')),
+  Merlin: () => loadAgent(import('./Merlin')),
+  Peedy: () => loadAgent(import('./Peedy')),
+  Rocky: () => loadAgent(import('./Rocky')),
+  Rover: () => loadAgent(import('./Rover')),
 };
